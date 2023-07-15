@@ -1,0 +1,30 @@
+all:
+  children:
+    kr:
+      children:
+        auth:
+          hosts:
+            auth1:
+              ansible_host: 192.168.1.1
+              ansible_port: 22
+              ansible_user: ec2-user
+              # ansible_ssh_private_key_file
+            auth2:
+              ansible_host: 192.168.1.2
+              ansible_port: 22
+              ansible_user: ec2-user
+              # ansible_ssh_private_key_file
+    jp:
+      children:
+        auth:
+          hosts:
+            auth1:
+              ansible_host: 192.168.1.4
+              ansible_port: 22
+              ansible_user: ec2-user
+              # ansible_ssh_private_key_file
+            auth2:
+              ansible_host: 192.168.1.5
+              ansible_port: 22
+              ansible_user: ec2-user
+              # ansible_ssh_private_key_file
